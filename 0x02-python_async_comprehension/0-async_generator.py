@@ -2,12 +2,12 @@
 """
     Write a coroutine async def async_generator()
 """
-from typing import Iterator
+from typing import Generator
 import random
 import asyncio
 
 
-async def async_generator() -> Iterator[float]:
+async def async_generator() -> Generator[float, None, None]:
     """
         The coroutine will loop 10 times
         asynchroously wait 1 second, then
